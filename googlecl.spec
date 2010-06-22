@@ -7,6 +7,8 @@ Group:		Applications/Text
 Source0:	http://googlecl.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	936bdb036c340eb1f9d5b9b6b592e1b2
 URL:		http://code.google.com/p/googlecl/
+BuildRequires:	python-devel >= 1:2.6
+BuildRequires:	rpm-pythonprov
 Requires:	python-gdata >= 2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
