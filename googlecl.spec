@@ -32,6 +32,9 @@ rm -rf $RPM_BUILD_ROOT
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_mandir}/man1
+install man/google.1 $RPM_BUILD_ROOT%{_mandir}/man1
+
 %py_postclean
 
 %clean
@@ -39,6 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc changelog README.config README.new-usage README.txt
 %attr(755,root,root) %{_bindir}/google
 %{py_sitescriptdir}/%{name}
 %{py_sitescriptdir}/*.egg-info
+%{_mandir}/man1/google.1*
