@@ -1,11 +1,11 @@
 Summary:	Command line tools for the Google Data APIs
 Name:		googlecl
-Version:	0.9.13
+Version:	0.9.14
 Release:	1
 License:	Apache v2.0
 Group:		Applications/Text
 Source0:	http://googlecl.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	83252f69fd9b7ce0720af1aabb4ebf09
+# Source0-md5:	35d8fde3034d2ff8175385e5f5d7aa08
 URL:		http://code.google.com/p/googlecl/
 BuildRequires:	python-devel >= 1:2.6
 BuildRequires:	rpm-pythonprov
